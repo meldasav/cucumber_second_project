@@ -15,9 +15,9 @@ Feature: Feature: SmartBear  Functionalities_2
 
 
   Scenario: Validate "Check All" and "Uncheck All" links
-    When user clicks on "Check All" button
+    And user clicks on "Check All" button
     Then all rows should be checked
-    When user clicks on "Uncheck All" button
+    And user clicks on "Uncheck All" button
     Then all rows should be unchecked
 
 

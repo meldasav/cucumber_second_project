@@ -14,4 +14,22 @@ public class WebOrdersPage {
 
     @FindBy(xpath = "//ul[@id='ctl00_menu']//a")
     public List<WebElement> orderMenuItems;
+
+    @FindBy(xpath="//ul[@id='ctl00_menu']/li[3]/a")
+    public WebElement orderLink;
+
+    @FindBy(id = "ctl00_MainContent_btnCheckAll")
+    public WebElement checkAllLink;
+
+
+    @FindBy(id = "ctl00_MainContent_btnUncheckAll")
+    public WebElement uncheckAllLink;
+
+
+
+    @FindBy(css = ".CheckUncheck>a")
+    public List<WebElement> checkAndUncheck;
+
+   @FindBy(xpath = "//table[@id='ctl00_MainContent_orderGrid']//tr//td[1]")
+    public List<WebElement> checkBoxes;
 }
